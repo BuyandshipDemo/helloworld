@@ -1,0 +1,17 @@
+kitexinfo:
+   ServiceName: 'helloworld'
+   ToolVersion: 'v0.9.1'
+governance:
+  discovery:
+    component: etcd
+    address: 127.0.0.1:2379
+  config_center:
+    component: etcd
+    address: 127.0.0.1:2379
+observability:
+  logging:
+    path: ./output/log/app/app.log
+    level: debug
+  monitoring:
+    component: prometheus
+    address: 127.0.0.1:9091
